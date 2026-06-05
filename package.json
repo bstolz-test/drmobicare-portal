@@ -1,23 +1,12 @@
 {
   "name": "drmobicare-portal",
   "version": "1.0.0",
-  "description": "Dr. MobiCare Internal Portal - Employee, Equipment, and Operations Management System",
+  "description": "Dr. MobiCare Portal",
   "private": true,
-  "engines": {
-    "node": "18.x",
-    "npm": "9.x"
-  },
   "scripts": {
-    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
-    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
-    "start:backend": "cd backend && npm start",
-    "start:frontend": "cd frontend && npm start",
-    "build": "cd frontend && npm run build",
-    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
-    "dev:backend": "cd backend && npm run dev",
-    "dev:frontend": "cd frontend && npm start"
+    "start": "npx http-server -p 5000"
   },
-  "devDependencies": {
-    "concurrently": "^8.2.0"
+  "dependencies": {
+    "http-server": "^14.1.1"
   }
 }
