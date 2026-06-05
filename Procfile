@@ -1,1 +1,1 @@
-web: echo "Dr. MobiCare Portal - Demo Running" && node -e "const http = require('http'); http.createServer((req, res) => { res.writeHead(200, {'Content-Type': 'text/html'}); res.end('<h1>Dr. MobiCare Portal</h1><p>Backend is running. Visit /api/auth/login to test API.</p>'); }).listen(process.env.PORT || 5000);"
+web: npx http-server -p $PORT
